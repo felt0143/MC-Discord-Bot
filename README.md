@@ -1,1 +1,19 @@
-# MC-Discord-Bot
+# MC Discord Bot
+
+MC Discord Bot is a Python application that can be used to provide backend services for the MC's discord bot.
+
+## Installing Dependencies
+
+The requirements.txt file is a list of all of its dependencies. They can be installed as follows:
+
+```bash
+pip install -r /path/to/requirements.txt
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
