@@ -16,7 +16,8 @@ async def ping(context):
     await context.channel.send("pong")
 
 @bot.command(pass_context=True)
-async def change_nickname(context, member: discord.Member, new_nickname):
+async def change_nickname(context, member: discord.Member, *args):
+    new_nickname = ' '.join(args)
     await member.edit(nick=new_nickname)
     await context.send(f'{member}\'s nickname is now {new_nickname}.')
 
