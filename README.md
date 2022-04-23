@@ -7,7 +7,13 @@ MC Discord Bot is a Python application that can be used to provide backend servi
 The requirements.txt file is a list of all of its dependencies. They can be installed as follows:
 
 ```bash
-pip install -r /path/to/requirements.txt
+pip install -r requirements.txt
+```
+
+## Usage
+
+```commandline
+python bot.py
 ```
 
 ## Contributing
