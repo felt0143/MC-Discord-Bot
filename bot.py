@@ -29,4 +29,10 @@ async def gif(context, *args):
     url = giphy.search(query, 10)
     await context.send(url)
 
-bot.run(TOKEN)
+
+@bot.command()
+async def google(context, *args):
+    await context.send('https://www.google.com/')
+
+if __name__ == '__main__':
+    bot.run(TOKEN)
