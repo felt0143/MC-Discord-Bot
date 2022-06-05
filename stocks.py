@@ -15,11 +15,11 @@ def get_ticker_history(symbol, period='1d', interval='1m'):
 
 
 def create_price_history_plot_png(symbol, period='1d', interval='1m'):
-    # Check if symbol exists first
-    if not ticker_exists(symbol):
-        return ''
-
     ticker_history = get_ticker_history(symbol, period, interval)
+
+    # Don't create a plot if there is no data
+    if ticker_history.size == 0:
+        return ''
 
     figure = plt.figure()
     figure.set_figwidth(8)
