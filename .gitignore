@@ -130,3 +130,6 @@ dmypy.json
 
 # JetBrains project specific settings files
 .idea
+
+# The data subdirectory
+data/
