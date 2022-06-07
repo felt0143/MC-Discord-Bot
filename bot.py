@@ -15,12 +15,12 @@ load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
 
-bot = commands.Bot(command_prefix="$")
+bot = commands.Bot(command_prefix='$')
 
 
 @bot.command()
 async def ping(context):
-    await context.channel.send("pong")
+    await context.channel.send('pong')
 
 
 @bot.command(pass_context=True)
