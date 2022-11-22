@@ -15,8 +15,8 @@ pip install -r requirements.txt
 The following environment variables must be set for the application to work properly:
 
 * DISCORD_TOKEN
-* DISCORD_GUILD
 * GIPHY_API_KEY
+* NEXTCLOUD_URL
 
 ## Usage
 
