@@ -13,7 +13,7 @@ Path('./data').mkdir(parents=True, exist_ok=True)
 # Load our environment variables
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
-GUILD = os.getenv('DISCORD_GUILD')
+NEXTCLOUD = os.getenv('NEXTCLOUD_URL')
 
 bot = commands.Bot(command_prefix='$')
 
@@ -40,6 +40,11 @@ async def gif(context, *args):
 @bot.command()
 async def google(context, *args):
     await context.send('https://www.google.com/')
+
+
+@bot.command()
+async def nextcloud(context):
+    await context.channel.send(NEXTCLOUD)
 
 
 @bot.command()
