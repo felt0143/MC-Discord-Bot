@@ -10,6 +10,14 @@ The requirements.txt file is a list of all of its dependencies. They can be inst
 pip install -r requirements.txt
 ```
 
+## Environment Variables
+
+The following environment variables must be set for the application to work properly:
+
+* DISCORD_TOKEN
+* DISCORD_GUILD
+* GIPHY_API_KEY
+
 ## Usage
 
 ```commandline
