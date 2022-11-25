@@ -15,7 +15,7 @@ load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 NEXTCLOUD = os.getenv('NEXTCLOUD_URL')
 
-bot = commands.Bot(command_prefix='$')
+bot = commands.Bot(command_prefix='$', intents=discord.Intents.all())
 
 
 @bot.command()
